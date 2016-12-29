@@ -17,11 +17,16 @@
     </div>
 </div>
 <div class="wrapper">
-    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" autoplay muted loop>
+    <video poster="img/poster.jpg" id="bgvid" autoplay muted loop>
         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-        <source src="video/52926309.mp4" type="video/mp4">
-        <source src="video/52926309.webm" type="video/webm">
+        <!--<source src="video/52926309.mp4" type="video/mp4">-->
+        <source src="video/iceland4_1.webm" type="video/webm">
     </video>
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
     <h1>Hello World</h1>
     <p class="intro">Show me what you've got</p>
     <div class="scroll-down svg" id="home-scroll-down">
@@ -30,6 +35,16 @@
         <path class="scroller" fill="#ffffff" d="M13.0833359 19.2157116h-0.9192753c-1.0999985 0-1.9999971-0.8999996-1.9999971-1.9999981v-5.428606c0-1.0999994 0.8999987-1.9999981 1.9999971-1.9999981h0.9192753c1.0999985 0 1.9999981 0.8999987 1.9999981 1.9999981v5.428606C15.083334 18.315712 14.1833344 19.2157116 13.0833359 19.2157116z"></path>
     </svg>
         <i class="icon icon-arrow-down"></i>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li ><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 <script src="script.js"></script>

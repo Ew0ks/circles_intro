@@ -1,10 +1,18 @@
 /**
  * Created by admin on 29/12/2016.
  */
+/*
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
 
-/*$(function() {
-    setTimeout(function() {
-        $( ".animated" ).css('display' , 'none');
-    }, 4000);
+function vidFade() {
+    vid.classList.add("stopfade");
+}
 
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed
+    vid.pause();
+// to capture IE10
+    vidFade();
 });*/

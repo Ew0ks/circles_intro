@@ -18,4 +18,10 @@ $(function() {
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
     });
+    $('body').mCustomScrollbar();
+    setTimeout(BodyScroll, 4000);
 });
+
+function BodyScroll() {
+    $('body').css('overflow' , 'auto');
+}

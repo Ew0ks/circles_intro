@@ -1,6 +1,7 @@
 @import "variables";
 @import "flex";
 @import "menu";
+@import "jquery.mCustomScrollbar";
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 //@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
 
@@ -9,6 +10,8 @@
 * {
   box-sizing: border-box;
 }
+
+body {overflow: hidden;}
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -23,7 +26,7 @@ h1 {
 
 .wrapper {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   @include flexbox;
   @include align-items(center);
   @include flex-direction(column);
@@ -32,6 +35,7 @@ h1 {
   background: rgba($color1,.65);
   color:$color2;
   overflow: hidden;
+  transition: all .35s;
   h1 {
     display: block;
     width: 100%;
@@ -245,4 +249,10 @@ video {
 }
 .stopfade {
   opacity: .5;
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-color:$color1;
 }

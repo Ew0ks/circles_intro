@@ -7,7 +7,6 @@ gulp.task('script', function () {
     return gulp
         .src([
             "node_modules/jquery/dist/jquery.slim.min.js",
-            "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js",
             "res/script/**/*.js"
         ])
         .pipe(uglify())
@@ -26,11 +25,7 @@ gulp.task('template', [], function () {
 gulp.task('style', function () {
     return gulp
         .src('res/scss/style.scss')
-        .pipe(sass({
-            "includePaths" : [
-                "node_modules/malihu-custom-scrollbar-plugin"
-            ]
-        }))
+        .pipe(sass())
         .pipe(gulp.dest('web/'))
         ;
 });

@@ -1,7 +1,6 @@
 @import "variables";
 @import "flex";
 @import "menu";
-@import "jquery.mCustomScrollbar";
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 //@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
 
@@ -24,7 +23,7 @@ h1 {
   font-size: 7em;
 }
 
-.wrapper {
+.wrap {
   height: 100vh;
   width: 100%;
   @include flexbox;
